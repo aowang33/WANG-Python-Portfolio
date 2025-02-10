@@ -1,8 +1,13 @@
 # WANG-Python-Portfolio
-This repository contains my Python programming portfolio. It includes various projects and exercises I have worked on to practice and improve my Python skills. The projects range from basic programming concepts to more advanced topics, showcasing my growth as a Python programmer.
-## Repository Structure
-- **EDA**
-- **Visualizations**
-- **Model**
-- **Others**
+
+# Python Semester Project
+
+This is my Python project repository, which contains multiple semester projects. The focus project in this repository is a Web application built using Streamlit. Below is the structure of this repository:
+
+## Basic Streamlit App
+This app demonstrates how to load and display CSV data, and provides interactive filtering functionality. Users can filter the data by selecting different penguin species.
+
+You can start the app by running the following command:
+streamlit run basic_streamlit_app/main.py
+
 ## Future Updates
