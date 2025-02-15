@@ -8,7 +8,7 @@ st.title('Streamlit Basic App')
 st.write("This is a basic Streamlit app that loads a sample dataset and allows interactive filtering")
 
 # load a CSV file
-df = pd.read_csv('basic_streamlit_app/data/penguins.csv')
+df = pd.read_csv('data/penguins.csv')
 
 
 # display the imported dataset
