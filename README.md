@@ -8,6 +8,7 @@ This is my Python project repository, which contains multiple semester projects.
 This app demonstrates how to load and display CSV data, and provides interactive filtering functionality. Users can filter the data by selecting different penguin species.
 
 You can start the app by running the following command:
-streamlit run basic_streamlit_app/main.py
+cd basic_streamlit_app
+streamlit run main.py
 
 ## Future Updates
