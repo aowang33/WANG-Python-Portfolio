@@ -44,7 +44,7 @@ st.dataframe(df.isnull().sum())
 # ------------------------------------------------------------------------------
 st.write("**Heatmap of Missing Values**")
 # Create a matplotlib figure and axis for the heatmap.
-fig, ax = plt.subplots()
+fig, ax = plt.subplots() # adding a blank canvas
 # Plot a heatmap where missing values are highlighted (using the 'viridis' color map, without a color bar).
 sns.heatmap(df.isnull(), cmap="viridis", cbar=False)
 # Render the heatmap in the Streamlit app.

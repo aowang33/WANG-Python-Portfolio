@@ -37,11 +37,19 @@ st.dataframe(df.describe())
 # ------------------------------------------------------------------------------
 # Display the count of missing values for each column.
 st.write("**Number of Missing Values by Column**")
+# Compute the sum of missing values per column and display the result.
+st.dataframe(df.isnull().sum())
 
 # ------------------------------------------------------------------------------
 # Visualize Missing Data
+st.write("**Heatmap of Missing Values**")
 # ------------------------------------------------------------------------------
 # Create a heatmap to visually indicate where missing values occur.
+fig, ax = plt.subplots() # adding a blank canvas
+# Plot a heatmap where missing values are highlighted (using the 'viridis' color map, without a color bar).
+sns.heatmap(df.isnull(), cmap="viridis", cbar=False)
+# Render the heatmap in the Streamlit app.
+st.pyplot(fig)
 
 
 # ================================================================================
