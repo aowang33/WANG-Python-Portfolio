@@ -23,14 +23,14 @@ Cleaning: The data was cleaned by removing rows with missing values and splittin
 Visualization: After cleaning, the data was visualized to explore the number of medals won by each gender and event.
 
 References
-[Pandas Cheat Sheet] (https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
-[Tidy Data Paper by Hadley Wickham] (https://vita.had.co.nz/papers/tidy-data.pdf)
+- [Pandas Cheat Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+- [Tidy Data Paper by Hadley Wickham](https://vita.had.co.nz/papers/tidy-data.pdf)
 
 Visual Examples
 1. 
 ![Number of Medals Won by Gender](images/Number_of_Medals_Won_by_Gender.png)
 2. 
-![Top 10 Events with Most Medals](images/Top 10 Events with Most Medals.png)
+![Top 10 Events with Most Medals](images/Top_10_Events_with_Most_Medals.png)
 
 Code Snippet Examples
 
