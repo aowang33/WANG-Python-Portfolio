@@ -1,5 +1,5 @@
 # Tidy Data Project
-Project Overview
+## Project Overview
 The goal of this project is to apply tidy data principles to a 2008 Olympics Medalists dataset. The tidy data principles emphasize organizing the data such that:
 
 Each variable is in its own column.
@@ -7,37 +7,35 @@ Each observation forms its own row.
 Each type of observational unit forms its own table.
 This project demonstrates how to clean, transform, and visualize sports data by applying these principles. The project involves reshaping the data to make it more suitable for analysis and visualization, and creating useful insights from the cleaned data.
 
-Instructions
-1. Install the required dependencies:
+## Instructions
+1. Install libraries:
 pandas
 matplotlib
 seaborn
 2. Run the Jupyter Notebook
 
-
-Dataset Description
+## Dataset Description
 The dataset used in this project contains information on athletes and the medals they have won in various sports events. It includes columns like athlete names, gender, event names, and the medal types (gold, silver, bronze).
 
 Pre-processing Steps:
-Reshaping: The data was initially in a wide format, with separate columns for each sport event and gender. This format was transformed using the melt() function to create a long format.
+Reshaping: The data was reshaped from wide to long format using the melt() function.
 Cleaning: The data was cleaned by removing rows with missing values and splitting the sports column into gender and event columns.
 Visualization: After cleaning, the data was visualized to explore the number of medals won by each gender and event.
 
 References
-Pandas Cheat Sheet
-Tidy Data Paper by Hadley Wickham
+[Pandas Cheat Sheet] (https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+[Tidy Data Paper by Hadley Wickham] (https://vita.had.co.nz/papers/tidy-data.pdf)
 
 Visual Examples
-1. Number of Medals by Gender
-Here is a bar plot showing the number of medals won by male and female athletes:
+1. 
+![Number of Medals Won by Gender](images/Number_of_Medals_Won_by_Gender.png)
+2. 
+![Top 10 Events with Most Medals](images/Top 10 Events with Most Medals.png)
 
-2. Medals Count by Event and Gender
-This pivot table summarizes the count of medals won by gender and event:
+Code Snippet Examples
 
-Example Code Snippet
-
-# Split the 'sports' column into 'gender' and 'event'
+### Split the 'sports' column into 'gender' and 'event'
 tidy_data[["gender", "event"]] = tidy_data["sports"].str.split("_", expand=True)
 
-# Drop the 'sports' column
+### Drop the 'sports' column
 tidy_data.drop(columns=["sports"], inplace=True)
