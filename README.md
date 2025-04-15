@@ -15,4 +15,17 @@ Link: Tidy Data Project Repository
 
 In the Tidy Data Project, I applied tidy data principles to clean and reshape a dataset of 2008 Olympics medalists. The project involved transforming the data using the melt() function and visualizing the number of medals won by each gender and event. It showcases my skills in data cleaning, transformation, and basic data visualization.
 
-## Future Updates
+## Custom NER App
+Link: NERStreamlitApp Repository
+
+The Custom Named Entity Recognition (NER) App is a Streamlit-based web application that uses spaCy to recognize and highlight named entities in text. It allows users to:
+
+Input text manually or upload .txt files
+
+Add custom entity recognition rules using spaCy’s EntityRuler
+
+Visualize recognized entities in real time with spaCy’s displacy
+
+This project demonstrates my ability to integrate natural language processing (NLP) techniques into interactive applications. It complements my portfolio by showing how I can build user-friendly tools that combine machine learning with web development.
+
+## Future Updates...
