@@ -22,20 +22,18 @@ Make sure you have Python 3.7+ installed. Required Python libraries:
 - `spacy`
 
 ### 📥 Install dependencies
-
-```bash
 pip install streamlit spacy
 python -m spacy download en_core_web_sm
 
 ▶️ Run the app locally
-bash
 streamlit run main.py
 
 🌐 Deployed Version
-- [View Live App](http://localhost:8501/)
+- [View Live App](https://wang-python-portfolio-jlzj2c6wpnoxvzd4xgtbtl.streamlit.app/)
 
 
-✨ App Features
+#### ✨ App Features
+
 1. Input Text
 Users can either:
 
