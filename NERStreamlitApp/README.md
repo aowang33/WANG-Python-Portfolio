@@ -22,10 +22,10 @@ Make sure you have Python 3.7+ installed. Required Python libraries:
 - `spacy`
 
 ### 📥 Install dependencies
-pip install streamlit spacy
+pip install streamlit spacy  
 python -m spacy download en_core_web_sm
 
-▶️ Run the app locally
+▶️ Run the app locally  
 streamlit run main.py
 
 🌐 Deployed Version
@@ -34,31 +34,31 @@ streamlit run main.py
 
 #### ✨ App Features
 
-1. Input Text
+1. Input Text  
 Users can either:
 
-Manually enter text into a text area
-Upload a .txt file for analysis
+   Manually enter text into a text area   
+   Upload a .txt file for analysis
 
-2. Add Custom Entity Rules
+2. Add Custom Entity Rules  
 Users can define new entities using label (e.g., ORG, PRODUCT) and pattern (e.g., "Tesla", "San Francisco") via a form. These rules are added with spaCy’s EntityRuler.
 
-Example:
-Label: ORG
+   Example:  
+Label: ORG  
 Pattern: Tesla
 
-3. View NER Results
+3. View NER Results  
 All detected entities are highlighted with colors using spaCy’s built-in visualizer displacy.
 
-A list of recognized entities is also displayed below the text.
+   A list of recognized entities is also displayed below the text.
 
-📚 References & Resources
-spaCy Documentation
-spaCy EntityRuler Guide
-Streamlit Documentation
+📚 References & Resources  
+- [spaCy Documentation](https://spacy.io/usage)  
+- [spaCy EntityRuler Guide](https://spacy.io/usage/rule-based-matching#entityruler)  
+- [Streamlit Documentation](https://docs.streamlit.io/)
 
 
-🖼️ Visual Examples
+🖼️ Visual Examples  
 1. 
 ![Manual input](images/1.png)
 2. 
