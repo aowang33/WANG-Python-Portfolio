@@ -5,13 +5,20 @@ This is a simple and clean Streamlit web app designed to analyze the sentiment o
 My academic background is in organizational crisis management. In this field, understanding how the public reacts to corporate crises is crucial. Natural Language Processing (NLP), especially sentiment analysis, plays a key role in tracking public opinion in news media. I developed this app to provide an accessible interface for analyzing the sentiment of crisis-related news. The integrated NER visualization further helps to clearly identify key entities in the news, aiding interpretation and analysis.
 
 ### 🔍 Features  
-Text File Upload: Upload .txt files containing news articles or reports.
+#### Text Input: 
+Directly type or paste news content into the text area to analyze it immediately.
+
+#### Text File Upload: 
+Upload .txt files containing news articles or reports.
 
 #### Sentiment Analysis:
 
 Calculates polarity (positive–negative) and subjectivity (objective–subjective).
 
 Displays interpretation of the sentiment result (positive / negative / neutral).
+
+#### Named Entity Recognition (NER): 
+Highlight organizations, people, dates, and other named entities using spaCy.
 
 #### Visualization:
 
@@ -28,15 +35,11 @@ Inline rendering of Named Entity Recognition results.
 ### 🧠 Named Entity Recognition
 ![NER](images/NER.png)
 
-## 🚀 How to Use
-
-Sample File: A downloadable .txt file is provided for testing.
 
 📁 File Structure 
 
 📦 StreamlitAppFinal  
  ┣ 📄 main.py  
- ┣ 📄 sample_news.txt  
  ┣ 📁 images  
  ┃ ┣ 📄 news_content_preview.png  
  ┃ ┣ 📄 sentiment_analysis.png  
@@ -46,6 +49,12 @@ Sample File: A downloadable .txt file is provided for testing.
 🚀 How to Use
 Run the Streamlit app:
 streamlit run main.py
-Upload a .txt file with news content.
+Upload a .txt file with news content or Directly type or paste news content into the text area to analyze it immediately
 
 View sentiment analysis results and named entities directly in the browser.
+
+📚 References & Resources  
+- [spaCy Documentation](https://spacy.io/usage)  
+- [spaCy EntityRuler Guide](https://spacy.io/usage/rule-based-matching#entityruler)  
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- [TextBlob Documentation](https://textblob.readthedocs.io/en/dev/)

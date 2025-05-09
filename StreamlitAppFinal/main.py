@@ -17,40 +17,39 @@ st.markdown(
     "It also visualizes the Named Entity Recognition (NER) results to highlight people, organizations, locations, and more."
 )
 
-# ---------------------------------------
-# Optional: Provide a downloadable sample
-# ---------------------------------------
-st.markdown("### 📁 Example File")
-try:
-    # Open the sample file and provide a download button
-    with open("sample_news.txt", "r", encoding="utf-8") as file:
-        sample_text = file.read()
-        st.download_button(
-            label="📥 Download Sample TXT File",
-            data=sample_text,
-            file_name="sample_news.txt",
-            mime="text/plain"
-        )
-except FileNotFoundError:
-    st.warning("⚠️ Sample file not found. Please make sure 'sample_news.txt' is in the same directory.")
+# -------------------------------
+# Text input field with example content
+# -------------------------------
+example_text = """
+On May 5, 2025, XYZ Corporation announced a significant layoff of 10% of its workforce due to economic downturns and declining sales. 
+The CEO, John Doe, stated, "This was a difficult decision, but necessary to ensure the long-term stability of the company." 
+The announcement was met with mixed reactions from employees and investors. While some analysts are optimistic that the company will recover, 
+others fear that the layoffs might harm its public image and employee morale.
+
+XYZ's stock price fell by 8% on the day of the announcement, reflecting the negative sentiment in the market. Investors are concerned about 
+the company's ability to rebound after such a major decision. The company has been facing increasing competition from newer, tech-driven firms 
+and has struggled to adapt its product offerings to meet changing consumer demands. Despite these challenges, the leadership team remains committed 
+to driving growth and improving profitability over the next few quarters.
+"""
 
 # -------------------------------
-# Upload user-provided news file
+# Upload file option
 # -------------------------------
 uploaded_file = st.file_uploader("📎 Upload a text file (.txt) containing news content", type=["txt"])
 
-# If a file is uploaded
+# If a file is uploaded, read its content
 if uploaded_file is not None:
-    # Read the content of the file as a string
     text = uploaded_file.read().decode("utf-8")
-    
-    # Show a preview of the uploaded text
-    st.subheader("📄 News Content Preview")
+    st.subheader("📄 Uploaded News Content")
     st.text_area("📝 Original Text", text, height=200)
+else:
+    # If no file is uploaded, provide a text area for user input with example content
+    text = st.text_area("📄 Enter News Content for Sentiment Analysis", example_text, height=200)
 
-    # ---------------------------
-    # Sentiment Analysis Section
-    # ---------------------------
+# ---------------------------
+# Sentiment Analysis Section
+# ---------------------------
+if text:  # Only run sentiment analysis if text is provided
     st.subheader("💬 Sentiment Analysis Results")
     
     # Use TextBlob to perform sentiment analysis
@@ -97,6 +96,6 @@ if uploaded_file is not None:
     # Embed the HTML into the Streamlit app
     st.components.v1.html(html, height=500, scrolling=True)
 
-# If no file has been uploaded yet
+# If no text has been provided (neither from upload nor input)
 else:
-    st.info("📥 Please upload a text file containing company crisis news for analysis.")
+    st.info("📥 Please either upload a text file or enter news content related to a company crisis for analysis.")
