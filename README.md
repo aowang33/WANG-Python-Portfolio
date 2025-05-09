@@ -32,4 +32,20 @@ Visualize recognized entities in real time with spaCy’s displacy
 
 This project demonstrates my ability to integrate natural language processing (NLP) techniques into interactive applications. It complements my portfolio by showing how I can build user-friendly tools that combine machine learning with web development.
 
+## StreamlitAppFinal: Company Crisis News Sentiment Analyzer
+Link: 
+- [StreamlitAppFinal Repository](https://github.com/aowang33/WANG-Python-Portfolio/tree/main/StreamlitAppFinal)
+
+The Company Crisis News Sentiment Analyzer is a Streamlit-based web application designed to analyze the sentiment of news articles related to company crises. This app leverages TextBlob for sentiment analysis and spaCy for Named Entity Recognition (NER). It enables users to:
+
+Upload text files (.txt) containing news articles about company crises.
+
+Analyze sentiment of the news content, providing insights into whether the sentiment is positive, negative, or neutral.
+
+Visualize sentiment data in a simple bar chart format, representing polarity and subjectivity values.
+
+Visualize named entities identified in the news articles using spaCy’s displacy, helping users better understand key topics in the news.
+
+This project reflects my ability to integrate Natural Language Processing (NLP) into interactive web applications. By combining sentiment analysis and NER with a visual interface, I can provide insightful analysis of real-world data in a user-friendly way.
+
 ## Future Updates...
